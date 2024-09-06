@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>{% block title %}Student App{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <h1>Student Registration</h1>
+        <nav>
+            <a href="{{ url_for('student_list') }}">Home</a> |
+            <a href="{{ url_for('register_student') }}">Register Student</a>
+        </nav>
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+</body>
+</html>
