@@ -1,9 +1,5 @@
 from abc import ABC, abstractmethod
 
-AZURE_CLIENT_ID = '76ae1e67-c3d9-464d-b7f7-e5b89398e221'
-AZURE_CLIENT_SECRET = 'yEK8Q~qu3wqS_DDQyEznpKHc7_qPL8beC-LJzdf.'
-AZURE_TENANT_ID = '88d84258-a941-4406-ba09-4c3a0a10f9e3'
-
 
 class AbstractRegistry(ABC):
     @abstractmethod
