@@ -1,6 +1,9 @@
 from abc import ABC, abstractmethod
 
 
+# test
+
+
 class AbstractRegistry(ABC):
     @abstractmethod
     def add(self, entity):
